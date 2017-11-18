@@ -1,0 +1,14 @@
+img{
+    width: 100%;
+}
+.user_avatar{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  
+}

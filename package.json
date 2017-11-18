@@ -1,0 +1,17 @@
+{
+  "name": "car_store",
+  "version": "1.0.0",
+  "description": "simple project using MEAN",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "nodemailer": "^4.4.0"
+  },
+  "author": "Stanislav Tyrinov",
+  "license": "ISC"
+}
