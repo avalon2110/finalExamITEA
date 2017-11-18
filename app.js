@@ -3,6 +3,21 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const options = {
+  server: {
+    socketOptions: {
+      keepAlive: 300000,
+      connectTimeoutMS: 300000
+    }
+  },
+  replset: {
+    socketOptions: {
+      keepAlive: 300000,
+      connectTimeoutMS: 300000
+    }
+  }
+}
+
 app.use(bodyParser.json());
 
 
@@ -14,7 +29,7 @@ const Car = require('./models/car')
 
 const nodemailer = require("nodemailer");
 // connect to mongoose
-mongoose.connect('mongodb://localhost/carstore');
+mongoose.connect('mongodb://localhost/carstore', options);
 const db = mongoose.connection;
 console.log("connected to db");
 
